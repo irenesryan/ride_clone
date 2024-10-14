@@ -99,6 +99,7 @@ const SignUp = () => {
           <InputField
             label="Name"
             placeholder="Enter your Name"
+            placeholderTextColor="#FF5733"
             icon={icons.person}
             value={form.name}
             onChangeText={(value) => setForm({ ...form, name: value })}
@@ -106,6 +107,7 @@ const SignUp = () => {
           <InputField
             label="Email"
             placeholder="Enter your Email"
+            placeholderTextColor="#FF5733"
             icon={icons.email}
             value={form.email}
             onChangeText={(value) => setForm({ ...form, email: value })}
@@ -113,6 +115,7 @@ const SignUp = () => {
           <InputField
             label="Password"
             placeholder="Enter your Password"
+            placeholderTextColor="#FF5733"
             icon={icons.lock}
             secureTextEntry={true}
             value={form.password}
@@ -151,7 +154,7 @@ const SignUp = () => {
               label="Code"
               icon={icons.lock}
               placeholder="12345"
-              placeholderTextColor="#999"
+              placeholderTextColor="#FF5733"
               value={verification.code}
               keyboardType="numeric"
               onChangeText={(code) =>
